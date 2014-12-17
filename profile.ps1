@@ -11,3 +11,9 @@ function push { git push origin head }
 function pull { git pull }
 function stash { git stash }
 function apply { git stash apply }
+
+## Directories ##
+
+function desktop { cd "$env:userprofile/desktop" }
+function www { cd c:/inetpub/wwwroot }
+
