@@ -39,4 +39,12 @@ function apply { git stash apply }
 function desktop { cd "$env:userprofile/desktop" }
 function www { cd c:/inetpub/wwwroot }
 
+## Gravic ##
+
+function home { cd c:/code/gravic }
+function website { cd c:/users/mbowers/documents/projects/website/remarksite }
+function temp { cd_force z:/user/temp/meb }
+
 ## Init ##
+
+set-location c:\code\gravic
