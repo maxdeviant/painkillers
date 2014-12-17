@@ -47,4 +47,4 @@ function temp { cd_force z:/user/temp/meb }
 
 ## Init ##
 
-set-location c:\code\gravic
+set-location c:/code/gravic
