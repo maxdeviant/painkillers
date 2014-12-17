@@ -1,3 +1,11 @@
+## Prompt ##
+
+function prompt {
+    [console]::resetcolor()
+    $p = split-path -leaf -path (get-location)
+    "$p> "
+}
+
 # Aliases
 new-alias subl 'c:\program files\sublime text 2\sublime_text.exe'
 
