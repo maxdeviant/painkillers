@@ -6,13 +6,27 @@ function prompt {
     "$p> "
 }
 
-# Aliases
-new-alias subl 'c:\program files\sublime text 2\sublime_text.exe'
+## Aliases ##
 
-# POSIX
+new-alias subl "c:/program files/sublime text 2/sublime_text.exe"
+
+## POSIX ##
+
 function touch ($name) { echo $null >> $name }
 
-# Git
+## Helper ##
+
+# Change directory, creating the folder if it does not exist
+function cd_force ($dir) {
+    if (!(test-path $dir)) {
+        mkdir $dir
+    }
+
+    cd_v $dir
+}
+
+## Git ##
+
 function co { git checkout }
 function master { git checkout master }
 function push { git push origin head }
@@ -25,3 +39,4 @@ function apply { git stash apply }
 function desktop { cd "$env:userprofile/desktop" }
 function www { cd c:/inetpub/wwwroot }
 
+## Init ##
