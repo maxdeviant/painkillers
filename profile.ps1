@@ -8,7 +8,7 @@ function prompt {
 
 ## Aliases ##
 
-new-alias subl "c:/program files/sublime text 2/sublime_text.exe"
+new-alias subl "c:/program files/sublime text 3/sublime_text.exe"
 
 ## POSIX ##
 
