@@ -29,5 +29,3 @@ foreach($package in $packages) {
 }
 
 echo "Finished package installations"
-
-rm -recurse -force bin
